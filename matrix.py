@@ -1,3 +1,14 @@
+#Project: "Matrix Operations Tool" using Python and the NumPy library 
+
+#Features:
+# 1. Matrix Input: Allow users to input matrices of varying sizes.
+# 2. Matrix Addition
+# 3. Matrix Subtraction
+# 4. Matrix Multiplication
+#5. Transpose of a Matrix
+# 6. Determinant of a Matrix
+
+
 import numpy as np
 
 # Function to take matrix input from user
