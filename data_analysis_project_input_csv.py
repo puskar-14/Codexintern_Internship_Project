@@ -1,19 +1,18 @@
-# --------------------------------------------------------------
+
 # PROJECT: Data Analysis using Pandas & Matplotlib
 # TASKS (with user-provided CSV):
 # 1) Load CSV given by user
 # 2) Perform basic analysis
 # 3) Create bar chart, scatter plot, and heatmap
 # 4) Display insights
-# --------------------------------------------------------------
+
 
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-# --------------------------------------------------------------
 # STEP 1: Load CSV provided by user
-# --------------------------------------------------------------
+
 def load_user_csv():
     print("Enter the CSV file path (Example: sales.csv): ")
     path = input("CSV File: ").strip()
@@ -26,9 +25,9 @@ def load_user_csv():
         print("\nError loading CSV:", e)
         exit()
 
-# --------------------------------------------------------------
+
 # STEP 2: Perform basic analysis
-# --------------------------------------------------------------
+
 def analyze_data(df):
     print("\n--- BASIC INFO ---")
     print(df.info())
@@ -55,9 +54,8 @@ def analyze_data(df):
 
     return category_summary, region_summary
 
-# --------------------------------------------------------------
+
 # STEP 3: Create Visualizations
-# --------------------------------------------------------------
 
 # Bar Chart
 def plot_revenue_by_category(summary):
@@ -107,9 +105,9 @@ def plot_monthly_heatmap(df):
     plt.close()
     print("Saved: monthly_revenue_heatmap.png")
 
-# --------------------------------------------------------------
+
 # STEP 4: Insights
-# --------------------------------------------------------------
+
 def generate_insights(category_summary, region_summary):
     print("\n--- INSIGHTS ---")
 
@@ -124,9 +122,9 @@ def generate_insights(category_summary, region_summary):
     print("3. Category with highest sales may indicate customer preference.")
     print("4. Regions with lower revenue may need better marketing.")
 
-# --------------------------------------------------------------
+
 # MAIN FUNCTION
-# --------------------------------------------------------------
+
 def main():
     df = load_user_csv()
 
@@ -143,8 +141,7 @@ def main():
 
     print("\nALL TASKS COMPLETED SUCCESSFULLY.")
 
-# ------------------------a--------------------------------------
+
 # RUN PROGRAM
-# --------------------------------------------------------------
 if __name__ == "__main__":
     main()
